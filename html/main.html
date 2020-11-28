@@ -13,7 +13,7 @@
         <title>Digital Info Tech</title>
     </head>
 
-    <body style="font-family: Arial, Helvetica, sans-serif">
+    <body>
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
  
@@ -24,16 +24,18 @@
                         <a href="#" class="header__logo">
                             <img src="../images/cpu.png">
                         </a>
+                        <div class="header__name"><span>Digital Info Tech</span></div>
+
                         <div class="header__burger">
                             <span></span>
                         </div>
                         <nav class="header__menu">
                             <ul class="header__list">
                                 <li><a href="#" class="header__link" style="text-decoration: none; color: #ffffff;">Главная</a></li>
-                                <li><a href="#" class="header__link" style="text-decoration: none; color: #ffffff;">Новости</a></li>
+                                <li><a href="news.html" class="header__link" style="text-decoration: none; color: #ffffff;">Новости</a></li>
                                 <li><a href="#" class="header__link" style="text-decoration: none; color: #ffffff;">Обзоры</a></li>
                                 <li><a href="#" class="header__link" style="text-decoration: none; color: #ffffff;">Реестр</a></li>
-                                <li><a href="#" class="header__link" style="text-decoration: none; color: #ffffff;">О Нас</a></li>
+                                <li><a href="#about" class="header__link" style="text-decoration: none; color: #ffffff;">О Нас</a></li>
                             </ul>
                         </nav>
                     </div>
@@ -168,9 +170,8 @@
                                     <div class="content__header-text">
                                         <h5>Еще обзоры</h5>
                                     </div>
-                                    <p><a href="#">Новые процессоры AMD могут получить до 96 ядер. Такими могут быть топовые серверные CPU Epyc поколения Genoa</a></p>
-                                    <p><a href="#">Процессоры Intel Rocket Lake-S не смогут тягаться с Ryzen 5000</a></p>
-                                    <p><a href="#">Snapdragon, Kirin, Exynos и Dimensity будут использовать архитектуру «1+3+4» в 2021 году</a></p>   
+                                    <p><a href="#">AMD Ryzen U на ноутбуках лучше аналогов Intel?</a></p>
+                                    <p><a href="#">Разбор Отечественного процессора Эльбрус</a></p>   
                                 </div>
                             </div>
                         </div>
@@ -190,10 +191,7 @@
                                         <div class="text-down-img">
                                             <a href="#" class="a__none">
                                                 <div class="content__text"><span>ARM архитектура. Зачем, если есть более мощная X86 Архитектура?</span></div>
-                                                <div style="display: flex;">
-                                                    <div class="content__description"><span>Desktop</span></div>
-                                                    <div class="content__description"><span>Can Still</span></div>
-                                                </div>
+                                                    <div class="content__description"><span>Актуально</span></div>
                                             </a>
                                         </div>
                                     </div>
@@ -205,10 +203,7 @@
                                         <div class="text-down-img">
                                             <a href="#" class="a__none">
                                                 <div class="content__text"><span>Почему так важно знать про RISC решения в 2020 году?</span></div>
-                                                <div style="display: flex;">
-                                                    <div class="content__description"><span>Desktop</span></div>
-                                                    <div class="content__description"><span>Can Still</span></div>
-                                                </div>
+                                                    <div class="content__description"><span>Базовое</span></div>
                                             </a>
                                         </div>
                                     </div>
@@ -220,10 +215,7 @@
                                         <div class="text-down-img">
                                             <a href="#" class="a__none">
                                                 <div class="content__text"><span>Блочные архитектуры решения - новый тренд в дизайнинге процессоров</span></div>
-                                                <div style="display: flex;">
-                                                    <div class="content__description"><span>Desktop</span></div>
-                                                    <div class="content__description"><span>Can Still</span></div>
-                                                </div>
+                                                    <div class="content__description"><span>Все устройства</span></div>
                                             </a>
                                         </div>
                                     </div>
@@ -236,9 +228,8 @@
                                         <div class="content__header-text">
                                             <h5>Еще статьи</h5>
                                         </div>
-                                        <p><a href="#">Новые процессоры AMD могут получить до 96 ядер. Такими могут быть топовые серверные CPU Epyc поколения Genoa</a></p>
-                                        <p><a href="#">Процессоры Intel Rocket Lake-S не смогут тягаться с Ryzen 5000</a></p>
-                                        <p><a href="#">Snapdragon, Kirin, Exynos и Dimensity будут использовать архитектуру «1+3+4» в 2021 году</a></p>   
+                                        <p><a href="#">Почуму так важно минимизоравть размер транзисторов?</a></p>
+                                        <p>Основные принципы дизайнинга процессора. Машина Фон-Неймана<a href="#"></a></p>  
                                     </div>
                                 </div>
                             </div>
@@ -247,14 +238,20 @@
                 </div>
             </div>
 
-            <div class="about">
+            <div class="about" id="about">
                 <div class="container">
                     <div class="about__content">
                         <div class="row">
                             <!-- About text content -->
                             <div class="col-md-6">
                                 <div class="about__description">
-
+                                    <div class="about__header">
+                                        <img src="../images/cpu.png" class="img-fluid">
+                                        <span class="about__text">Digital Info Tech</span>
+                                    </div>
+                                    <div class="about__text about__information mobile__no">
+                                        <span>Сайт о мире современных процессоров</span>
+                                    </div>
                                 </div>
                             </div>
                             <!-- About social content -->

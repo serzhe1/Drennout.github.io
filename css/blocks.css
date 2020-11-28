@@ -1,7 +1,5 @@
 /* Menu part */
 
-.wrapper {
-}
 .header {
     position: fixed;
     width: 100%;
@@ -9,7 +7,13 @@
     left: 0;
     z-index: 10;
 }
-
+ .header__name{
+     position: absolute;
+    left: 50px;
+    z-index: 8;
+    font-size: 22px;
+    color: #fff;
+}
 .header:before {
     content: '';
     position: absolute;
@@ -18,23 +22,25 @@
     width: 100%;
     height: 100%;
     background-color: #000000;
-    z-index: 2;
+    z-index: 8;
 }
 
 .header__body {
     position: relative;
     display: flex;
     justify-content: space-between;
-    height: 80px;
+    height: 60px;
     align-items: center;
 }
-.header__logo {
-    flex:0 0 60px;
+
+.header__body a{
+    text-decoration: none;
+    color: #fff;
+}
+.header__logo { 
+    flex:0 0 45px;
     position: relative;
-    z-index: 3;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    z-index: 9;
 }
 
 .header__text{
@@ -42,7 +48,7 @@
     margin-left: 5px;
     color: #ffffff;
     font-size: 18px;
-    z-index: 3;
+    z-index: 9;
 }
 
 .header__logo img {
@@ -70,27 +76,35 @@
 
 .header__list {
     display: flex;
+    justify-content: center;
+    align-items: center;
     position: relative;
-    z-index: 2;
+    z-index: 8;
 }
 
 .header__list li{
     list-style: none;
-    margin: 0px 0px 0px 20px;
+    margin: 15px 0px 0px 20px;
+    border-bottom: 2px solid #000000;
+    transition: all 0.5s;
 }
 .header__link {
-    font-weight: 600;
-    font-size: 18px;
+    font-weight: 500;
+    font-size: 16px;
+}
+.header__list li:hover{
+    border-color: #01579b;
 }
 
 /* Text */
 .text__content{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-weight: 600;
 }
 /* Content part */
 
 .main-header{
-    margin-top: 80px;
+    margin-top: 60px;
     width: 100%;
     height: 60px;
     background-color: #212121;
@@ -104,6 +118,14 @@
 
 .news{
     margin-top: 4%;
+}
+
+.content__index{
+    transition: all 0.5s;
+}
+
+.content__index:hover{
+    z-index: 1;       
 }
 
 .content__header{
@@ -134,10 +156,11 @@
     filter:brightness(55%);
     object-fit: cover;
     border-radius: 1%;
-    transition: all 0.1s;
+    transition: all 0.5s;
 }
 .content img:hover{
-    border: 2px solid #0047a5;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    border-radius: 1%;
 }
 
 .content__headline img{
@@ -157,7 +180,7 @@
 .text-on-img{
     left: 5%;
     bottom: 5%;
-    z-index: 1;
+    z-index: 0;
     position: absolute;
 }
 
@@ -165,7 +188,7 @@
     color: #000000;
 }
 
-.content__headline .content__text{
+.content__headline .text-on-img .content__text{
     color: #ffffff;
     font-size: 130%;
 }
@@ -249,7 +272,28 @@
 }
 
 .about__description {
+    margin-top: 8%;
 }
+
+
+.about__header{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.about__header img{
+    width: 40px;
+    height: 40px;
+}
+
+.about__header span{
+    margin-left: 1%;
+}
+
+.about__information{
+    margin-top: 4%;
+}   
+
 
 .about__social {
     width: 100%;
@@ -282,8 +326,6 @@
     height: 40px;
 }
 
-/* Mobile */
-
 
 /* Media */
 @media (max-width: 992px){
@@ -311,7 +353,7 @@
         width: 30px;
         height: 20px;
         position: relative;
-        z-index: 3;
+        z-index: 9;
     }
 
     .header__burger span{
@@ -346,7 +388,7 @@
     .header__menu {
         position: fixed;
         top: -100%;
-        left: 0;
+        left: 0px;
         width: 100%;
         height: 100%;
         overflow: auto;
@@ -369,8 +411,13 @@
     }
 
     .header__list li{
-        margin: 0px 0px 20px 0px;
+        margin: 0px 0px 20px 0px
     }
+
+    .header__list li:hover{
+        border-color: #ffffff;
+    }
+
 
     .content__part{
         margin-top: 60px;
@@ -383,6 +430,7 @@
     body.lock{
         overflow: hidden;
     }
+    
 }
 
 @media (max-width: 767px){
@@ -398,6 +446,26 @@
     .content__element img{
         height: 100%;
         width: 100%;
+    }
+
+
+    /* about */
+    .about__description {
+        margin: 0;
+    }
+    .about__header {
+        margin-top: 2%;
+        justify-content: center;
+        align-items: center;
+    }
+    .about__text {
+    }
+    .about__information {
+        margin: 0 auto;
+        text-align: center;
+    }
+    .about__social {
+        margin-top: 6%;
     }
 
     /* Mobile */

@@ -1,0 +1,44 @@
+/* News */
+
+.news{
+    margin-top: 60px;
+}
+.news__main{
+    margin-top: 7%;
+}
+.news .content__header{
+    margin-top: 7%;
+    text-align: center;
+}
+
+.news .content__headline{
+    transition: all 0.2s;
+}
+
+
+.news .content__headline img{
+    width: 100%;
+    height: 200px;  
+}
+
+.news .text-down-img .content__text{
+    font-size: 20px;
+}
+
+.main__content{
+    margin-top: -7%;
+    width: 100%;
+}
+
+@media (max-width: 768px){
+    .main__content{
+        margin-top: 2%;
+    }
+
+    
+    .news__main{
+        margin-top: 0%;
+    }
+}
+
+
