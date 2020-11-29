@@ -3,12 +3,13 @@
 .news{
     margin-top: 60px;
 }
+
 .news__main{
     margin-top: 7%;
 }
 .news .content__header{
     margin-top: 7%;
-    text-align: center;
+    /* text-align: center; */
 }
 
 .news .content__headline{
@@ -24,10 +25,15 @@
 .news .text-down-img .content__text{
     font-size: 20px;
 }
-
 .main__content{
     margin-top: -7%;
     width: 100%;
+}
+
+.categoiry__content .content img:hover{
+    -webkit-filter:brightness(85%);
+    -moz-filter:brightness(85%);
+    filter:brightness(85%);
 }
 
 @media (max-width: 768px){

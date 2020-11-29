@@ -120,7 +120,7 @@
     margin-top: 4%;
 }
 
-.content__index{
+.col-md-12 .content__index{
     transition: all 0.5s;
 }
 
@@ -210,8 +210,13 @@
     color: #000000;
 }
 
+.content__element a{
+    text-decoration: none;
+    color: #000000;
+}
 
 .content__element img{
+    width: 100%;
     height: 240px;
 }
 
@@ -458,8 +463,7 @@
         justify-content: center;
         align-items: center;
     }
-    .about__text {
-    }
+
     .about__information {
         margin: 0 auto;
         text-align: center;
