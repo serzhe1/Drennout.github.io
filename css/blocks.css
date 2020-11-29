@@ -168,6 +168,13 @@
     height: 280px;
 }
 
+
+.content img:hover{
+    -webkit-filter:brightness(85%);
+    -moz-filter:brightness(85%);
+    filter:brightness(85%);
+}
+
 .content__down{
     margin-top: 4%;
 }

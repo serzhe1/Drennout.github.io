@@ -1,28 +1,28 @@
 /* News */
 
-.news{
-    margin-top: 60px;
+._news{
+    margin-top: 70px;
 }
 
 .news__main{
     margin-top: 7%;
 }
-.news .content__header{
+._news .content__header{
     margin-top: 7%;
     /* text-align: center; */
 }
 
-.news .content__headline{
+._news .content__headline{
     transition: all 0.2s;
 }
 
 
-.news .content__headline img{
+._news .content__headline img{
     width: 100%;
     height: 200px;  
 }
 
-.news .text-down-img .content__text{
+._news .text-down-img .content__text{
     font-size: 20px;
 }
 .main__content{

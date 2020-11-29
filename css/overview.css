@@ -1,0 +1,18 @@
+.overviews{
+    margin-top: 70px;
+}
+
+.overview__content,.popular-categories,.overview__category
+,.overview__elements
+ {
+    margin-bottom: 2%;
+}
+
+.popular-categories,.overview__category
+ {
+    margin-top: 10%;
+}
+
+.overview__elements{
+    margin-bottom: 5%;
+}
