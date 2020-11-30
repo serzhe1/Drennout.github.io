@@ -240,7 +240,7 @@
 
 
 
-/* overview */
+/* news */
 
 .overview{
     margin-top: 10%;
@@ -452,12 +452,15 @@
     }
 
     .content__element{
-        margin-top: 10%;
+        margin-bottom: 2%;
     }
 
     .content__element img{
         height: 100%;
         width: 100%;
+    }
+    .content__headline{
+        margin-bottom: 2%;
     }
 
 
