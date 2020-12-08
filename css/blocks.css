@@ -144,7 +144,7 @@
     display: flex;
     justify-content: space-between;
 }
-
+/*  */
 .content__headline a{
     text-decoration: none;
     color: #ffffff;
@@ -274,7 +274,7 @@
 /* About */
 
 .about{
-    z-index: 6;
+    /*  */
     margin-top: 10%;
     background: linear-gradient(to top left, #145b7c, #272727);
     width: 100%;
