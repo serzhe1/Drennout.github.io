@@ -1,0 +1,51 @@
+.article{
+    margin-top: 70px;
+}
+
+.article__content{
+    margin-top:10%;
+}
+.article__relevant .content__headline img{
+    height: 450px;
+}
+
+.article__relevant .content__element img{
+    height: 450px;
+}
+
+.article__main .content__headline img{    
+    height: 700px;
+}
+
+
+@media (max-width: 992px){
+    .article__relevant .content__headline img{
+        height: 300px;
+    }    
+
+    .article__relevant .content__element img{
+    height: 300px;
+    }
+
+    .article__main .content__headline img{    
+        height: 500px;
+    }
+}
+
+@media (max-width: 767px){
+    .article__relevant .content__headline img{
+        height: 200px;
+    }    
+    
+    .recommendation{
+        margin-top: 5%;
+    }
+
+    .article__relevant .content__element img{
+    height: 200px;
+    }
+
+    .article__main .content__headline img{    
+        height: 100%;
+    }
+}
