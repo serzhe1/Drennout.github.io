@@ -1,0 +1,1 @@
+packageSearchIndex = [{"l":"All Packages","u":"allpackages-index.html"},{"l":"net.gmailapi.emailclientspirngapp"},{"l":"net.gmailapi.emailclientspirngapp.configurations"},{"l":"net.gmailapi.emailclientspirngapp.controllers"},{"l":"net.gmailapi.emailclientspirngapp.entities"},{"l":"net.gmailapi.emailclientspirngapp.services"}];updateSearchResults();
